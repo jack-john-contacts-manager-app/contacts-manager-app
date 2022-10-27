@@ -11,12 +11,20 @@ public class ContactApp {
         Path pathToContacts = Paths.get("src", "contacts.txt");
         System.out.println(pathToContacts);
 
-        System.out.println("1. View contacts.\n" +
+        String contactMenu = new String ("1. View contacts.\n" +
                 "2. Add a new contact.\n" +
                 "3. Search a contact by name.\n" +
                 "4. Delete an existing contact.\n" +
                 "5. Exit.\n" +
                 "Enter an option (1, 2, 3, 4 or 5) and press enter:");
+
+//        System.out.println("1. View contacts.\n" +
+//                "2. Add a new contact.\n" +
+//                "3. Search a contact by name.\n" +
+//                "4. Delete an existing contact.\n" +
+//                "5. Exit.\n" +
+//                "Enter an option (1, 2, 3, 4 or 5) and press enter:");
+        System.out.println(contactMenu);
 
         Scanner sc = new Scanner(System.in);
         String yesOrNo = "y";
@@ -38,12 +46,18 @@ public class ContactApp {
                 System.out.println("Until next time");
                 break;
 
+            } else if(userInput.equalsIgnoreCase("n")) {
+                System.out.println("Until next time");
+                break;
+
+            } else if(userInput.equalsIgnoreCase("y")){
+                System.out.println(contactMenu);
 
             } else {
                 System.out.println("not a valid option");
             }
             System.out.println("Would you like to continue? y/n");
-            yesOrNo = sc.next();
+//            yesOrNo = sc.next();
         }
     }
 
