@@ -1,3 +1,6 @@
+import util.Input;
+
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
@@ -5,9 +8,10 @@ import java.util.Scanner;
 public class ContactApp {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ViewContacts viewContacts = new ViewContacts();
         AddContact addContact = new AddContact();
+        Input input = new Input();
 
         Path pathToContacts = Paths.get("src", "contacts.txt");
         System.out.println(pathToContacts);
@@ -38,10 +42,14 @@ public class ContactApp {
 
 
             } else if(userInput.equalsIgnoreCase("3")) {
-                System.out.println("test3");
+                System.out.println("Search for contact info");
+                String search = input.getString();
+                SearchContact.searchName(search);
+
 
             } else if(userInput.equalsIgnoreCase("4")) {
-                System.out.println("test4");
+                String delete = input.getString();
+                DeleteContact.deleteName(delete);
 
             } else if(userInput.equalsIgnoreCase("5")) {
                 System.out.println("Breaking out");
