@@ -30,10 +30,12 @@ public class ContactApp {
 
             } else if(userInput.equalsIgnoreCase("2")) {
                 System.out.println("Enter the name: ");
-
+                String userName = sc.nextLine();
                 System.out.println("Enter the number: ");
+                String phoneNumber = sc.nextLine();
+                System.out.println(addContact.addContact(userName,phoneNumber));
+                System.out.printf(userName + " | " + phoneNumber);
 
-                System.out.println(addContact.addContact());
 
             } else if(userInput.equalsIgnoreCase("3")) {
                 System.out.println("test3");
@@ -55,6 +57,7 @@ public class ContactApp {
             } else {
                 System.out.println("not a valid option");
             }
+            System.out.println("");
             System.out.println("Would you like to continue? y/n");
 //            yesOrNo = sc.next();
         }

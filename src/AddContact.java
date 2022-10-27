@@ -8,19 +8,15 @@ import java.util.List;
 
 public class AddContact {
 
-    public String contactName(String name){
-        return name;
-    }
-    public String contactNumber(String number){
-        return number;
-    }
 
-public String addContact(){
+
+public String addContact(String userName, String phoneNumber){
 
     Path p = Paths.get("src", "contacts.txt");
 
     List<String> names = new ArrayList<>();
-    names.add(contactName("sklhg") + " | " + contactNumber("sdgkj"));
+    names.add(userName + " | " + phoneNumber);
+
 
 
     try {
