@@ -10,12 +10,13 @@ public class AddContact {
 
 
 
-public String addContact(String userName, String phoneNumber){
+public void addContact(String userName, String phoneNumber){
 
     Path p = Paths.get("src", "contacts.txt");
 
     List<String> names = new ArrayList<>();
-    names.add(userName + " | " + phoneNumber);
+    String tempString = String.format("%-14s | %-10s |",userName,phoneNumber);
+    names.add(tempString);
 
 
 
@@ -25,7 +26,6 @@ public String addContact(String userName, String phoneNumber){
         e.printStackTrace();
     }
 
-    return "";
     }
 }
 

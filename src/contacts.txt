@@ -1,12 +1,11 @@
-Name          | Phone Number
---------------------------------
-Nicolas Cage  | 2101112334
-Danny DeVito  | 3125468829
-Chris Walken  | 5123329090
-Keanu Reeves  | 3904328791
-Stephen is a beast | 1111111111
-Jack | 123123123
-yee Haw | 123123
-Roddy Rigo | 2121212121
-yoo yooo | 31313133131
-asldhjkfg | 1234
+Name           | Phone Number
+-----------------------------
+Nicolas Cage   | 2101112334 |
+Danny DeVito   | 3125468829 |
+Chris Walken   | 5123329090 |
+Keanu Reeves   | 3904328791 |
+jack           | 3211233232 |
+john           | 3211232121 |
+rodrigo        | 1233211212 |
+Stephen        | 1231233211 |
+steve          | 12         |
