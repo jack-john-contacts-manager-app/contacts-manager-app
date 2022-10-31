@@ -8,7 +8,8 @@ import java.util.List;
 
 public class AddContact {
 
-
+// addContact allows user to add name and phone number to contact list, formats the info
+// and appends the formatted input into contacts.txt
 
 public void addContact(String userName, String phoneNumber){
 

@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class ContactApp {
 
+// Where the magic happens
+// While loop is contained in here to put all of the created classes to use
+// Allows users to view the contact list, add a new contact, search and delete contacts
+//    by inputting the name of the contact you'd like to get, and exit the loop
 
     public static void main(String[] args) throws IOException {
         ViewContacts viewContacts = new ViewContacts();
@@ -22,7 +26,6 @@ public class ContactApp {
                 "4. Delete an existing contact.\n" +
                 "5. Exit.\n" +
                 "Enter an option (1, 2, 3, 4 or 5) and press enter:");
-//        System.out.println(contactMenu);
 
 
         Scanner sc = new Scanner(System.in);
@@ -56,13 +59,6 @@ public class ContactApp {
             } else if(userInput.equalsIgnoreCase("5")) {
                 System.out.println("Breaking out");
                 break;
-
-//            } else if(userInput.equalsIgnoreCase("n")) {
-//                System.out.println("Breaking out");
-//                break;
-//
-//            } else if(userInput.equalsIgnoreCase("y")){
-//                System.out.println(contactMenu);
 
             } else {
                 System.out.println("not a valid option");

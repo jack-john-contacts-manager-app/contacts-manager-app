@@ -7,11 +7,7 @@ import java.util.List;
 
 public class ViewContacts {
 
-//    public String getContacts(){
-////        for (String contacts : lines) {
-////            System.out.println(contacts);
-////        }
-//    }
+// allows user to view the list of contacts that is available in the contacts.txt file
 
     public String contacts() {
 

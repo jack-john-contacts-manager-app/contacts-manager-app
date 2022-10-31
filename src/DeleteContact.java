@@ -7,6 +7,9 @@ import java.util.List;
 
 public class DeleteContact {
 
+// allows user to delete a contact by searching for the name of the contact they
+// would like to delete
+
     static Path p = Paths.get("src", "contacts.txt");
 
 
